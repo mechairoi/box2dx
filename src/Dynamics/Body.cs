@@ -910,6 +910,12 @@ namespace Box2DX.Dynamics
 		/// <returns></returns>
 		public World GetWorld() { return _world; }
 
+		/// <summary>
+		/// Get the contact list of this body.
+		/// </summary>
+		/// <returns></returns>
+		public ContactEdge GetContactList() { return _contactList; }
+
 		internal bool SynchronizeShapes()
 		{
 			XForm xf1 = new XForm();
